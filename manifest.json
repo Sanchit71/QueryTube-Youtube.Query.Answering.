@@ -1,0 +1,16 @@
+{
+  "name": "QueryTube",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Question-Answering with the Creators.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["activeTab", "webNavigation"]
+}
