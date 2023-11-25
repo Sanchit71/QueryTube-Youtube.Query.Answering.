@@ -6,20 +6,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #4c4949;
 }
 
 .container {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #4c4949;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     width: 400px;
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -28,7 +28,7 @@ label {
     display: block;
     font-size: 16px;
     margin: 15px 0 10px;
-    color: #555;
+    color: #ffffff;
 }
 
 input {
@@ -36,14 +36,14 @@ input {
     padding: 12px;
     margin: 10px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 5px;
     font-size: 16px;
 }
 
 button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -59,5 +59,5 @@ button:hover {
 #answer-container {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: rgb(255, 255, 255);
 }
