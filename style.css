@@ -1,17 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #4c4949;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
 }
 
 .container {
     text-align: center;
-    background-color: #4c4949;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -19,17 +19,25 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #333;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    font-size: 16px;
-    margin: 15px 0 10px;
-    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 0 10px;
+    color: #00ffd5;   
 }
+
+#video-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold; /* Added to make only "Video Title" bold */
+}
+
 
 input {
     width: 100%;
@@ -42,22 +50,38 @@ input {
 }
 
 button {
-    background-color: #4caf50;
-    color: #ffffff;
-    padding: 12px 20px;
+    background-color: rgb(116, 223, 135);
+    color: #fff;
+    padding: 14px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; /* Added transition */
 }
 
+button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+
 button:hover {
-    background-color: #45a049;
+    background-color: #51ff00;
 }
 
 #answer-container {
     margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    text-align: left;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: #000000;
+    background-color: #fff;
+}
+
+#answer-container.placeholder {
+    color: #999;
 }
