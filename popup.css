@@ -18,10 +18,9 @@ body {
     width: 400px;
 }
 
-h1 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 15px;
+.logo {
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Maintain aspect ratio */
 }
 
 label {
