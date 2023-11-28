@@ -35,7 +35,7 @@ label {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
-    font-weight: bold; /* Added to make only "Video Title" bold */
+    font-weight: bold; 
 }
 
 
@@ -57,7 +57,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s, color 0.3s; /* Added transition */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 button:disabled {
