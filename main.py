@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from youtube_transcript_api import YouTubeTranscriptApi
 from nltk.tokenize import word_tokenize
-from transformers import pipeline
+from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -62,7 +62,9 @@ def preprocess_captions(captions):
 
 async def get_answer_from_model(query, text):
     model_name = "deepset/roberta-base-squad2"
-    nlp = pipeline('question-answering', model=model_name, tokenizer=model_name, framework='pt', min_answer_length=10)
+    model = AutoModelForQuestionAnswering.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    nlp = pipeline('question-answering', model=model, tokenizer=tokenizer, framework='pt', min_answer_length=10)
 
     QA_input = {'question': query, 'context': text}
     
