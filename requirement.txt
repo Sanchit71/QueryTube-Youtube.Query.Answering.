@@ -4,5 +4,4 @@ youtube-transcript-api
 nltk 
 transformers
 fastapi[all]
-fastapi uvicorn
 uvicorn

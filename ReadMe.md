@@ -16,6 +16,7 @@ QueryTube is a Chrome extension that allows users to directly talk to the creato
 ## How to Use
 1. **Install the Extension:**
    - Download the extension files or clone the repository.
+   - Delete the `__pycache__` folder.
    - Open Chrome and navigate to `chrome://extensions/`.
    - Enable "Developer mode" and click "Load unpacked."
    - Select the folder containing the extension files.
@@ -24,7 +25,7 @@ QueryTube is a Chrome extension that allows users to directly talk to the creato
    - Navigate to the `main.py` file in your terminal.
    - Install the required dependencies using:
      ```bash
-     pip install -r requirements.txt
+     pip install -r requirement.txt
      ```
    - Start the FastAPI server with:
      ```bash
